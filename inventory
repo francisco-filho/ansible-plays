@@ -1,0 +1,5 @@
+[all]
+centos.example.com
+hadoop.example.com
+[hadoop]
+hadoop.example.com

@@ -1,0 +1,13 @@
+---
+- name: PostgreSQL 12
+  hosts: hadoop
+  become: yes
+  tasks:
+  - name: Instalar postgresql no Ubuntu
+    apt:
+      name: postgresql-12
+      state: latest
+  - name:
+    ansible.builtin.service:
+      name: postgresql
+      state: started
