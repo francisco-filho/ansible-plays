@@ -7,7 +7,7 @@
     apt:
       name: postgresql-12
       state: latest
-  - name:
+  - name: Iniciar serviço
     ansible.builtin.service:
       name: postgresql
       state: started
