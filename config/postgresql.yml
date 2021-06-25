@@ -1,0 +1,10 @@
+---
+- name: Configurar postgresql para uso inicial
+  hosts: hadoop
+  tasks:
+  - name: Criar usuario `admin`
+    postgresql_user:
+      db: postgres
+      name: admin
+      password: admin123
+      role_attr_flags: LOGIN,SUPERUSER
